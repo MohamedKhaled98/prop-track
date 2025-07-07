@@ -3,7 +3,6 @@ import storageUtils from "../utils/storageUtils";
 import { notification } from "antd";
 
 const isAuthRoute = (url?: string) => url?.startsWith("/auth");
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const attachAuthInterceptor = (axiosInstance: AxiosInstance) => {
   axiosInstance.interceptors.request.use(async (config: InternalAxiosRequestConfig) => {
@@ -12,7 +11,6 @@ export const attachAuthInterceptor = (axiosInstance: AxiosInstance) => {
     if (!isAuthenticating) {
       config.headers["x-agent-id"] = storageUtils.getAgentAccessId() || "";
     }
-    await delay(1000);
     return config;
   });
 };
