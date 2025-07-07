@@ -1,0 +1,38 @@
+@layer theme, base, antd, components, utilities;
+
+@import "tailwindcss";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "antd/dist/reset.css"; */
+@theme {
+  --color-primary: #4152b7;
+}
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+}
+
+[data-aos="animation"] {
+  opacity: 0.5;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(20px);
+
+    &.aos-animate {
+      transform: translateY(0);
+    }
+  }
+}
