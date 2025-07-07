@@ -1,5 +1,7 @@
 # React Frontend (Vite + TypeScript)
 
+quick note: attached JSON file for (locations), please import it or seed into db.
+
 ## Tech Stack
 
 - **Vite** + **React** + **TypeScript**
