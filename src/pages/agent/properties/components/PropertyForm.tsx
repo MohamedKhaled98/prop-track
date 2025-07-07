@@ -59,10 +59,9 @@ const PropertyForm = () => {
   };
   const handleSubmit = (values: any) => {
     const payload = { ...values };
-    delete payload.images;
-
     const formData = serialize(payload);
-    values.images?.forEach((file: any) => formData.append("images", file.originFileObj));
+
+    fileList?.forEach((file: any) => formData.append("images", file.originFileObj));
 
     mutate(formData);
   };
@@ -80,8 +79,7 @@ const PropertyForm = () => {
             name="images"
             label="Upload Images"
             valuePropName="fileList"
-            getValueFromEvent={getFilesFromEvent}
-            rules={[{ required: true, message: "Please upload at least one image!" }]}>
+            getValueFromEvent={getFilesFromEvent}>
             <Upload
               listType="picture-card"
               fileList={fileList}
