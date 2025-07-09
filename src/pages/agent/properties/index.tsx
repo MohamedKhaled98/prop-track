@@ -57,9 +57,9 @@ const Properties = () => {
           label: "Delete",
           icon: <DeleteOutlined />,
           danger: true,
-          onClick(record: any) {
-            // handle delete property
-          },
+          // onClick(record: any) {
+          //   // handle delete property
+          // },
         },
       ]}
     />
@@ -114,6 +114,6 @@ export const propertColumns: ColumnsType<Listing> = [
     title: "Size",
     dataIndex: "size",
     key: "size",
-    render: (size, record) => `${size.value} ${size.unit}`,
+    render: size => `${size.value} ${size.unit}`,
   },
 ];

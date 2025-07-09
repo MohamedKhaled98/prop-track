@@ -1,5 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
-import { Button, Form, Input, message, Modal, Typography } from "antd";
+import { Button, Form, Input, message, Modal } from "antd";
 import { useForm } from "antd/es/form/Form";
 import { useState } from "react";
 import inquiryService from "../../../api/services/inquiry.service";

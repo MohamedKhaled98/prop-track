@@ -1,4 +1,4 @@
-import { Button, Flex, Input, InputNumber, Segmented, Select, Tag, Typography } from "antd";
+import { Button, Flex, Segmented, Select, Tag, Typography } from "antd";
 import { SearchIcon } from "../../../../../assets/icons/SVG";
 
 import { BATH_ROOMS, BED_ROOMS, PROPERTY_TYPES } from "../../../../../constants";

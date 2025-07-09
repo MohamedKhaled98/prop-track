@@ -1,4 +1,4 @@
-import { Dropdown, Flex, Input, theme, Typography, type DropdownProps } from "antd";
+import { Dropdown, Flex, theme, Typography, type DropdownProps } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 
 const { useToken } = theme;

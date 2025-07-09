@@ -1,12 +1,9 @@
-import { Flex, Image, Tag, Typography } from "antd";
 import AppTable from "../../../components/common/AppTable";
 import type { ColumnsType } from "antd/es/table";
 import { useState } from "react";
-import { formatAmount } from "../../../utils/function";
 import { produce } from "immer";
 import type { Inquiry } from "../../../types/inquiry";
 
-const { Text } = Typography;
 const Inquiries = () => {
   const [query, setQuery] = useState<any>({ page: 1, limit: 5 });
 

@@ -1,7 +1,7 @@
 import { Flex, Typography } from "antd";
 import { Outlet } from "react-router";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 const AuthLayout = () => {
   return (
     <div className="h-lvh  bg-[url('src/assets/images/hero.png')] bg-cover bg-top-left">

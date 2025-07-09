@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <div className="p-8 bg-white">
-      <div className="rounded-3xl overflow-hidden bg-[url('src/assets/images/hero.png')] bg-cover bg-top-left">
+      <div className="rounded-3xl overflow-hidden bg-[url('/hero.png')] bg-cover bg-top-left">
         <div className="container px-12 pt-6 mx-auto" data-aos="fade-down" data-aos-delay="1500">
           <Flex justify="space-between">
             <Title className="m-0 font-bold text-white" level={4}>

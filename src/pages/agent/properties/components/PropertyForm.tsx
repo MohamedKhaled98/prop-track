@@ -37,7 +37,7 @@ const PropertyForm = () => {
 
   const { mutate, isPending } = useMutation({
     mutationFn: propertyService.create,
-    onSuccess: data => {
+    onSuccess: () => {
       message.success("Property has been created successfully!");
       navigate("/properties");
     },

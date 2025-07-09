@@ -1,4 +1,4 @@
-import { Button, Menu, theme, type MenuProps } from "antd";
+import { Menu, type MenuProps } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { EyeOutlined, HomeOutlined, MessageOutlined, UserOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router";

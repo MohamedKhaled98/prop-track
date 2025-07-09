@@ -1,4 +1,4 @@
-import { Button, Empty, Flex, Pagination, Spin, Typography, type PaginationProps } from "antd";
+import { Button, Empty, Flex, Pagination, Spin, Typography } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import type { Listing } from "../../types/listing";
 import listingService from "../../api/services/listing.service";

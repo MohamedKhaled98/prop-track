@@ -1,5 +1,5 @@
 import { Flex, Spin, Table, Typography } from "antd";
-import { useDebouncedCallback } from "use-debounce";
+// import { useDebouncedCallback } from "use-debounce";
 import { useMemo, type ReactNode } from "react";
 import type { ColumnsType, TableProps } from "antd/es/table";
 import type { PaginatedResponse } from "../../types/common";
@@ -40,14 +40,14 @@ const AppTable = ({
   rowActions,
   rowLoadingKeys,
   rowSelection,
-  onSearchChange,
+  // onSearchChange,
   onChange,
-  filters,
+  // filters,
   limit = 10,
 }: Props) => {
-  const debounced = useDebouncedCallback(value => {
-    onSearchChange?.(value);
-  }, 600);
+  // const debounced = useDebouncedCallback(value => {
+  //   onSearchChange?.(value);
+  // }, 600);
 
   const renderedColumns = useMemo(() => {
     if (!rowActions) return columns;
