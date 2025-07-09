@@ -76,7 +76,7 @@ export const propertColumns: ColumnsType<Listing> = [
     render: (_, record) => (
       <Flex gap={10} align="center">
         <Image
-          src={`${import.meta.env.VITE_PUBLIC_DOMAIN}/${record.images?.[0]}`}
+          src={record.images?.[0]}
           className="h-22 w-22 object-cover rounded-2xl"
           alt="Propert image"
           preview={false}

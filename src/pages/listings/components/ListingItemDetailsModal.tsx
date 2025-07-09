@@ -26,11 +26,7 @@ const ListingItemDetailsModal = ({ listing, onClose }: Props) => {
       <Carousel arrows className="rounded-3xl overflow-hidden">
         {listing?.images.map(img => (
           <div key={img}>
-            <img
-              src={`${import.meta.env.VITE_PUBLIC_DOMAIN}/${img}`}
-              className="h-58 w-full object-cover "
-              alt="Propert image"
-            />
+            <img src={img} className="h-58 w-full object-cover " alt="Propert image" />
           </div>
         ))}
       </Carousel>

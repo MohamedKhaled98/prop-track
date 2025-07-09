@@ -19,7 +19,7 @@ const ListingItem = ({ listing, onClick }: Props) => {
       data-aos="animation"
       onClick={() => onClick(listing)}>
       <Image
-        src={`${import.meta.env.VITE_PUBLIC_DOMAIN}/${listing.images?.[0]}`}
+        src={listing.images?.[0]}
         className=" h-58 object-cover "
         width="33%"
         rootClassName="w-full h-58"
